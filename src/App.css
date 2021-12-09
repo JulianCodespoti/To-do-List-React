@@ -1,16 +1,47 @@
-.App {
-  text-align: center;
+.App-TodoText
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-TodoList
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  width: 800px;
+  border: 1px solid #1953c7;
+  background-color: #425780;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-TodoList .theList li
+{
+  margin-right: 40px;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  list-style: none;
+  background-color: #6780b3;
+}
+.App-TodoList .theList li:hover{
+  cursor: pointer;
+  background-color: #1953c7;
+}
+.ImageDiv
+{
+  float: top;
+}
+.App-Button
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App-Button:hover
+{
+  cursor: pointer;
 }
 
 .App-header {
@@ -20,19 +51,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
